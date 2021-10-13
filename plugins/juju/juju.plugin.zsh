@@ -20,8 +20,13 @@ unset completion_file
 alias jam="juju add-model --config logging-config=\"<root>=WARNING; unit=DEBUG\"\
  --config update-status-hook-interval=\"60m\""
 alias jb='juju bootstrap'
+alias jbl='juju bootstrap localhost'
 alias jbm='juju bootstrap microk8s'
 alias jc='juju config'
+alias jcld='juju clouds'
+alias jclda='juju clouds --all'
+alias jctl='juju controllers'
+alias jctlr='juju controllers --refresh'
 alias jdc='juju destroy-controller --destroy-all-models'
 alias 'jdc!'='juju destroy-controller --destroy-all-models --force --no-wait -y'
 alias jdcds='juju destroy-controller --destroy-all-models --destroy-storage'
